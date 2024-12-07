@@ -202,8 +202,8 @@ class TemporalFeatureExtractionModule(nn.Module):
             d_model: int,
             max_len: int = 5_000,
             nhead: int = 8,
-            dim_feedforward: int = 2048,
-            nlayers: int = 6,
+            dim_feedforward: int = 128,
+            nlayers: int = 2,
             dropout: float = 0.1,
             mode: str = 'max',
     ):
@@ -268,8 +268,8 @@ class SpatialFeatureExtractionModule(nn.Module):
             d_model: int,
             max_len: int = 5_000,
             nhead: int = 8,
-            dim_feedforward: int = 2048,
-            nlayers: int = 6,
+            dim_feedforward: int = 128,
+            nlayers: int = 2,
             dropout: float = 0.1,
     ):
         super().__init__()
